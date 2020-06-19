@@ -1,0 +1,34 @@
+body
+{   
+    background-color: white;
+    background-image: url("img/iphone12.png");
+    background-repeat: no-repeat;
+    background-position: right top;
+    margin-right:700px;
+    background-attachment: fixed;
+}  
+
+.bonusbox
+{
+    background-image:url("img/bonusbox.png");
+    background-repeat: no-repeat;
+    background-size: 90px 90px;
+    margin-left: auto;
+}
+.size
+{
+    height:85px;
+    width:85px;
+    
+      
+}
+.button
+{
+    background-image:url("img/bonusbox2.png");
+    height:100px;
+    width:100px;
+    border-radius: 8px;
+    border: 2px white;
+    cursor: pointer;
+
+}
