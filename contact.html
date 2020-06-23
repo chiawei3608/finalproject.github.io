@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>填寫中獎資料</title>
+  <title>填寫中獎資料</title>
+  <link rel="stylesheet" href="fraud.css">
 </head>
-<body>
+<body >
+
   <h1 style="color:red;">恭喜您完成測驗！<br>現在請您填寫個人資料以方便我們將手機寄給您。</h1>
-    <form action="/data.html">
+  
+    <form class = "form">
         <label for="fname">姓名:</label><br>
         <input type="text" id="fname" name="fname" value=王小明 style="opacity: 0.5;"><br>
         <label for="lname">電話:</label><br>
@@ -18,7 +21,12 @@
         <input type="email" id="email" name="email" value=a123456789@mail.com style="opacity: 0.5;"><br><br>
         <button type="button" onclick="myalert()">提交</button>
         <input type="reset">
-      </form>
+        
+    </form>
+  
+
+    
+
 <script src="myscript.js"></script>
 </body>  
 </html>
