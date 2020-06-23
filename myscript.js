@@ -6,7 +6,12 @@ function myprompt()
         if(person != "小明" ){ 
             alert("錯誤，下次再努力!"); 
             close('fraud.html');}
-        else{alert("1/6");}
+            else{alert("恭喜答對，請於下個網站中填寫個人資料以獲得全新iPhone12!");
+            open('contact.html');
+            close('fraud.html');
+            
+        }
+        
     }
 function myprompt2()
     {
@@ -14,7 +19,12 @@ function myprompt2()
         if(person != "8" ){
             alert("錯誤，下次再努力!"); 
             close('fraud.html');}
-        else{alert("2/6");}
+        else{alert("恭喜答對，請於下個網站中填寫個人資料以獲得全新iPhone12!");
+            open('contact.html');
+            close('fraud.html');
+            
+    }
+       
     }
 function myprompt3()
     {
@@ -22,30 +32,47 @@ function myprompt3()
         if(person != "第二名" ){
             alert("錯誤，下次再努力!"); 
             close('fraud.html');}
-        else{alert("3/6");}
+            else{alert("恭喜答對，請於下個網站中填寫個人資料以獲得全新iPhone12!");
+            open('contact.html');
+            close('fraud.html');
+            
+        }
+        
     }
 function myprompt4()
     {
         var person =prompt("你能從100之中拿出2幾次？","50");
         if(person != "1" ){alert("錯誤，下次再努力!"); close('fraud.html');}
-        else{alert("4/6");}
+        else{alert("恭喜答對，請於下個網站中填寫個人資料以獲得全新iPhone12!");
+        open('contact.html');
+        close('fraud.html');
+        
+    }
+        
     }
  function myprompt5()
     {
         var person =prompt("有些月份有31天，有些月份有30天。那有幾個月份有28天？","1");
         if(person != "12" ){alert("錯誤，下次再努力!"); close('fraud.html');}
-        else{alert("5/6");}
+        else{alert("恭喜答對，請於下個網站中填寫個人資料以獲得全新iPhone12!");
+        open('contact.html');
+        close('fraud.html');
+        
+    }
+        
     }
 function myprompt6()
     {
         var person =prompt("如果2個畫家能在2個小時內畫好2個房間，那麼如果要在6個小時內畫好18個房間需要幾個畫家？","8");
-        if(person != "6" ){alert("錯誤，下次再努力!"); close('fraud.html');}
+        if(person != "6" ){alert("錯誤，下次再努力!"); close('fraud.html');
+    }
         else
         {
-            alert("6/6"); 
-            alert("恭喜您六題都答對，請於下個網站中填寫個人資料以獲得全新iPhone12!");
+            
+            alert("恭喜答對，請於下個網站中填寫個人資料以獲得全新iPhone12!");
             open('contact.html');
             close('fraud.html');
+            
             
         }
     }
@@ -61,3 +88,37 @@ function myalert()
         alert(text) ;
         close();
     }
+
+
+
+    function getRandom(min,max){
+
+        var choice =  Math.floor(Math.random()*(max-min+1))+min;
+        
+        return choice ;
+    };
+    function randomq(){   
+        
+        var choice = getRandom(1,6) ; 
+
+        switch(choice){
+        case 1:
+            new myprompt();
+            return;
+        case 2:
+            new myprompt2();
+            return;
+            
+        case 3:
+            new myprompt3();
+            return;
+        case 4:
+            new myprompt4();
+            return;
+        case 5:
+            new myprompt5();
+            return;
+        case 6:
+            new myprompt6();
+            return;
+    }}
